@@ -1,0 +1,82 @@
+
+/* chat */
+
+.scrollbar-w-2::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+  
+  .scrollbar-track-blue-lighter::-webkit-scrollbar-track {
+    --bg-opacity: 1;
+    background-color: #f7fafc;
+    background-color: rgba(247, 250, 252, var(--bg-opacity));
+  }
+  
+  .scrollbar-thumb-blue::-webkit-scrollbar-thumb {
+    --bg-opacity: 1;
+    background-color: #edf2f7;
+    background-color: rgba(237, 242, 247, var(--bg-opacity));
+  }
+  
+  .scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem;
+  } 
+
+
+/* menu bar */
+/* left */
+/* s */
+
+.time-span{
+    display: flex;
+    letter-spacing: .00625em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.75rem;
+}
+
+.g2yd9 {
+    align-self: center;
+    border-left: 1px solid #dadce0;
+    height: 1rem;
+}
+
+.Qp8KI {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    margin: 0 12px;
+    overflow: hidden;
+}
+
+/* center */
+
+.R5ccN {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 12px;
+    padding: 0 6px;
+}
+
+.slow {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 30px;
+  max-height: 36px;
+  overflow: hidden;
+  animation: slow 7s ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slow {
+  from {
+    max-width: 20px;
+  }
+  to {
+    max-width: 700px;
+  }
+}
