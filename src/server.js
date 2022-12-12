@@ -67,6 +67,10 @@ io.on('connection', socket => {
     socket.to(roomId).broadcast.emit('user-connected', userId)
 
     io.emit('hello')
+    io.emit('streamId and userObject', Array.from(userStreamIdAndUserObject))
+    io.emit('set name for participants tab', Array.from(users))
+    io.emit(roomId + 'raise hand queue', Array.from(raisehandQueue))
+
 
     socket.on('streamId and userObject', (userStreamId, user) => {
       users.set(user.userId, user)
